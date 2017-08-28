@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
+body {
+  margin: 0px;
+}
+
+.codeminer-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10vh;
+  font-weight: 900;
+  text-align: center;
+}
+
+.central-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10rem;
+  font-weight: 900;
+  text-align: center;
+  position: relative;
+  margin-top: 250px;
+
+}
+
+.jumbotron {
+  background: url('../images/central-banner.jpg') no-repeat center / cover;
+  height: 100%;
+  width: 100%;
+}
+

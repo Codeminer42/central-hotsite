@@ -1,0 +1,14 @@
+{
+  "name": "central-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
+  }
+}
