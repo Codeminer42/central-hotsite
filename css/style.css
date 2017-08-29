@@ -87,3 +87,30 @@ h1, h2, h3, a, p, li {
   line-height: 3rem
 }
 
+.more-feature-list{
+  list-style-type: none;
+  text-align: center;
+  font-size: 1.5rem
+}
+
+.more-feature-list img{
+  height: 8rem;
+  width: 8rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.integration {
+  text-align: center;
+}
+
+.integration img {
+  height: 6.25rem;
+  width: 6.25rem;
+  margin-right: 2rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  background-color: #AE0606;
+  height: 7rem;
+}
