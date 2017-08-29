@@ -25,6 +25,8 @@ h1, h2, h3, a, p, li {
 .codeminer-title {
   font-size: 7rem;
   text-align: center;
+  color:#6F6A6A;
+  text-transform: uppercase;
 }
 
 .central-title {
@@ -34,31 +36,34 @@ h1, h2, h3, a, p, li {
   margin-top: 10rem;
   margin-bottom: 0;
   font-weight: 400;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
 }
+
 
 .btn {
-  text-align: center
+  text-align: center;
 }
 
-.features-spacer{
+.features-spacer {
   justify-content: space-around;
 }
 
 .sign-up-btn-banner {
-    background-color: transparent;
-    color: white;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    border: 0.05rem solid white;
-    border-radius: 4rem;
-}
-
-.sign-up-btn-banner:hover {
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border: 0.05rem solid white;
+  border-radius: 4rem;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
 }
 
 .central-subtitle {
@@ -71,7 +76,7 @@ h1, h2, h3, a, p, li {
 }
 
 .jumbotron {
-  background: url('../images/central-banner-top.jpg') no-repeat center / cover;
+  background: url('../images/central-banner-top.jpg') no-repeat (center / cover);
   height: 100%;
   width: 100%;
 }
@@ -83,7 +88,7 @@ h1, h2, h3, a, p, li {
 
 .section-title {
   text-align: center;
-  font-size: 3rem
+  font-size: 3rem;
 }
 
 .feature-column {
@@ -91,7 +96,7 @@ h1, h2, h3, a, p, li {
 }
 
 .project-feature {
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .features-subtitle {
@@ -123,39 +128,35 @@ h1, h2, h3, a, p, li {
 
 .wrapper {
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: space-between;
+  li {
+    width: 30%;
+    margin-bottom: 2rem;
+  }
 }
 
-.wrapper li {
-  width: 30%;
-  margin-bottom: 2rem;
-}
-
-.more-feature-list{
+.more-feature-list {
   list-style-type: none;
   text-align: center;
-  font-size: 1.5rem
-}
-
-.more-feature-list img{
-  height: 8rem;
-  width: 8rem;
-  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+  img {
+    height: 8rem;
+    width: 8rem;
+    margin: 1rem 0 1rem 0;
+  }
 }
 
 .integration {
   text-align: center;
   font-size: 1.3rem;
-}
-
-.integration h2 {
-  margin-bottom: 2rem;
-}
-
-.integration img {
-  height: 6.25rem;
-  width: 6.25rem;
-  margin-right: 2rem;
+  h2 {
+    margin-bottom: 2rem;
+  }
+  img {
+    height: 6.25rem;
+    width: 6.25rem;
+    margin-right: 2rem;
+  }
 }
 
 .footer {
@@ -167,9 +168,33 @@ h1, h2, h3, a, p, li {
   font-size: 1.1rem;
 }
 
-.logos img{
+.logos img {
   margin-top: 1.5rem;
   margin-right: 1rem;
   width: 2.5em;
   height: 2.5em;
+}
+
+hr.section-heading-title {
+  border: 0;
+  height: 0.1em;
+  background: #333;
+  width: 30%;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 2cm;
+}
+
+.section-heading {
+  border: 0;
+  height: 0.1em;
+  background: #BAB8B8;
+  width: 40%;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 2cm;
+}
+
+.shadow-image {
+  width: 300px;
+	height: 150px;
+  box-shadow: 5px 5px 10px grey;
 }
