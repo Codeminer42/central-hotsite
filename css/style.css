@@ -8,23 +8,11 @@ h1, h2, h3, a, p, li {
   font-family: 'Open Sans', sans-serif;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-row {
-  width: 100%;
-  flex-direction: row;
-}
-
-.flex-column {
-  width: 100%;
-  flex-direction: column;
-}
-
 .codeminer-title {
   font-size: 7rem;
   text-align: center;
+  color:#6F6A6A;
+  text-transform: uppercase;
 }
 
 .central-title {
@@ -34,14 +22,12 @@ h1, h2, h3, a, p, li {
   margin-top: 10rem;
   margin-bottom: 0;
   font-weight: 400;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
 }
 
 .btn {
   text-align: center
-}
-
-.features-spacer{
-  justify-content: space-around;
 }
 
 .sign-up-btn-banner {
@@ -60,6 +46,7 @@ h1, h2, h3, a, p, li {
   background-color: white;
   color: black;
 }
+
 
 .central-subtitle {
   font-family: 'Open Sans', sans-serif;
@@ -82,53 +69,27 @@ h1, h2, h3, a, p, li {
 }
 
 .section-title {
+  margin-top: 2em;
   text-align: center;
   font-size: 3rem
-}
-
-.feature-column {
-  width: 50%;
-}
-
-.project-feature {
-  justify-content: space-between
 }
 
 .features-subtitle {
   color: #d0011b;
   font-size: 1.8rem;
-  text-align: center;
-  width: 50%;
+  text-align: center
 }
 
-.report-subtitle {
-  width: 100%;
-}
-
-.features-img {
-  max-width: 45rem;
-  max-height: 28rem;
-  width: 50%;
+.features img {
+  width: 37.5rem;
+  height: 25rem;
 }
 
 .features-list {
   font-size: 1.3rem;
+  text-align: left;
   margin-left: 5rem;
-  line-height: 3rem;
-}
-
-.report-list {
-  margin-left: 20rem;
-}
-
-.wrapper {
-  flex-wrap: wrap;
-  justify-content: space-between
-}
-
-.wrapper li {
-  width: 30%;
-  margin-bottom: 2rem;
+  line-height: 3rem
 }
 
 .more-feature-list{
@@ -145,11 +106,6 @@ h1, h2, h3, a, p, li {
 
 .integration {
   text-align: center;
-  font-size: 1.3rem;
-}
-
-.integration h2 {
-  margin-bottom: 2rem;
 }
 
 .integration img {
@@ -160,16 +116,31 @@ h1, h2, h3, a, p, li {
 
 .footer {
   margin-top: 2rem;
-  margin-bottom: 0;
   background-color: #AE0606;
-  height: 8.5rem;
-  color: white;
-  font-size: 1.1rem;
+  height: 7rem;
 }
 
-.logos img{
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  width: 2.5em;
-  height: 2.5em;
+hr.section-heading-title {
+  border: 0;
+  height: 0.1em;
+  background: #333;
+  width: 30%;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 2cm;
+}
+
+.section-heading {
+  border: 0;
+  height: 0.1em;
+  background: #BAB8B8;
+  width: 40%;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 2cm;
+}
+
+.shadow-image {
+  width: 300px;
+	height: 150px;
+  box-shadow: 5px 5px 10px grey;
+  
 }
