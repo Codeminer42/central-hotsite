@@ -4,7 +4,7 @@ body {
   margin: 0px;
 }
 
-h1, h2, h3, a, p, li {
+h1, h2, h3, a, p, li, span {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,6 +15,10 @@ h1, h2, h3, a, p, li {
 .flex-row {
   width: 100%;
   flex-direction: row;
+
+  @media(max-width: 800px){
+    flex-direction: column;
+  }
 }
 
 .flex-column {
@@ -25,7 +29,7 @@ h1, h2, h3, a, p, li {
 .codeminer-title {
   font-size: 7rem;
   text-align: center;
-  color:#6F6A6A;
+  color:#585858;
   text-transform: uppercase;
 }
 
@@ -47,6 +51,13 @@ h1, h2, h3, a, p, li {
 
 .features-spacer {
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column-fix {
+  @media(max-width: 800px){
+    flex-direction: column-reverse;
+  }
 }
 
 .sign-up-btn-banner {
@@ -93,37 +104,53 @@ h1, h2, h3, a, p, li {
 
 .feature-column {
   width: 50%;
-}
-
-.project-feature {
-  justify-content: space-between;
+  @media(max-width: 800px) {
+    width: 100%;
+    align-items: center
+  }
 }
 
 .features-subtitle {
   color: #d0011b;
   font-size: 1.8rem;
   text-align: center;
+}
+
+.img-wrapper {
   width: 50%;
+  justify-content: flex-end;
+  @media(max-width: 800px) {
+      width: 100%;
+    }
 }
 
 .report-subtitle {
   width: 100%;
 }
 
-.features-img {
-  max-width: 45rem;
-  max-height: 28rem;
-  width: 50%;
-}
-
 .features-list {
   font-size: 1.3rem;
-  margin-left: 5rem;
   line-height: 3rem;
+
+  @media (max-width: 800px) {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0
+  }
+}
+
+.backlog-list {
+  margin-left: 8rem;
+  @media (max-width: 800px) {
+    margin-left: 0
+  }
 }
 
 .report-list {
-  margin-left: 20rem;
+  margin-left: 10rem;
+  @media (max-width: 800px) {
+    margin-left: 0
+  }
 }
 
 .wrapper {
@@ -165,6 +192,23 @@ h1, h2, h3, a, p, li {
   }
 }
 
+.sign-up-btn {
+  background-color: transparent;
+  color: black;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 3rem;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border: 0.05rem solid #AE0606;
+  border-radius: 4rem;
+  &:hover {
+    background-color: #AE0606;
+    color: white;
+  }
+}
+
 .footer {
   padding: 1rem;
   margin-top: 7em;
@@ -173,6 +217,11 @@ h1, h2, h3, a, p, li {
   height: 7.5rem;
   color: white;
   font-size: 1.1rem;
+  justify-content: space-between
+}
+
+.footer-column {
+  flex-direction: column
 }
 
 .logos {
@@ -188,7 +237,21 @@ h1, h2, h3, a, p, li {
   }
 }
 
-hr.section-heading-title {
+.footer-wrapper {
+  text-align: center;
+}
+.cm42-logo {
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+hr.line {
   border: 0;
   height: 0.1rem;
   background: #333;
@@ -207,9 +270,10 @@ hr.section-heading-title {
 }
 
 .shadow-image {
-  width: 40%;
-	height: 40%;
+  width: 90%;
   box-shadow: 5px 5px 10px grey;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .more-feature-section {
