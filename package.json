@@ -9,6 +9,10 @@
   "author": "",
   "license": "SEE LICENSE IN LICENSE.txt",
   "dependencies": {
-    "flexboxgrid": "^6.3.1"
+    "flexboxgrid": "^6.3.1",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "pump": "^1.0.2"
   }
 }
