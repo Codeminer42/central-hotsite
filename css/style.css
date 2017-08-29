@@ -1,28 +1,60 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
 
 body {
   margin: 0px;
 }
 
+h1, h2, h3, a, p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .codeminer-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 10vh;
-  font-weight: 900;
+  font-size: 7rem;
   text-align: center;
 }
 
 .central-title {
-  font-family: 'Oswald', sans-serif;
-  font-size: 10rem;
-  font-weight: 900;
+  font-size: 12vw;
+  color: white;
   text-align: center;
-  position: relative;
-  margin-top: 250px;
+  margin-top: 10rem;
+  margin-bottom: 0;
+  font-weight: 400;
+}
 
+.btn {
+  text-align: center
+}
+
+.sign-up-btn-banner {
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: 0.05rem solid white;
+    border-radius: 4rem;
+}
+
+.sign-up-btn-banner:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.central-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 300;
 }
 
 .jumbotron {
-  background: url('../images/central-banner.jpg') no-repeat center / cover;
+  background: url('../images/central-banner-top.jpg') no-repeat center / cover;
   height: 100%;
   width: 100%;
 }
