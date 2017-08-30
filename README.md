@@ -15,11 +15,6 @@ Boilerplate of the Centra SPA build with Gulp
  npm install && npm start
 ```
 
-### PS: We recommend using  [live-server](https://www.npmjs.com/package/live-server)
-
-```
-npm -g live-server
-```
 
 ## License
 
