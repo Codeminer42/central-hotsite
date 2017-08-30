@@ -1,4 +1,4 @@
-# Central SPA
+# Central SPA - [Template](https://central42.herokuapp.com/)
 
 
 Boilerplate of the Centra SPA build with Gulp
@@ -10,12 +10,12 @@ Boilerplate of the Centra SPA build with Gulp
 
 ## Usage:
 
+
 ```
- npm install && npm run gulp
+ npm install && npm start
 ```
 
 ### PS: We recommend using  [live-server](https://www.npmjs.com/package/live-server)
-
 
 ```
 npm -g live-server

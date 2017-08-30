@@ -1,39 +1,38 @@
 const gulp = require('gulp')
 const sass = require('gulp-sass')
 const imagemin = require('gulp-imagemin');
-const pump = require('pump');
 
 
 
 
 gulp.task('image-optimize', () =>
-    gulp.src('./assets/images/*')
+    gulp.src('./public/assets/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'))
+        .pipe(gulp.dest('./public/dist/images'))
 );
 
 
 gulp.task('sass', () => {
- 	return gulp.src('./assets/sass/**/*.scss')
+ 	return gulp.src('./public/assets/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./public/dist/css'));
 
 });
 
 gulp.task('sass-compress', () => {
- return gulp.src('./assets/sass/**/*.scss')
+ return gulp.src('./public/assets/sass/**/*.scss')
    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-   .pipe(gulp.dest('./dist/css/minify'));
+   .pipe(gulp.dest('./public/dist/css/minify'));
 });
 
 gulp.task('watch', () => {
-//    gulp.watch(['./assets/js/**/*.js'],['js-compress']); 
-    gulp.watch(['./assets/images/*.*'],['image-optimize']);
-	 gulp.watch(['./assets/sass/**/*.scss'], ['sass']);
-      gulp.watch(['./assets/sass/**/*.scss'], ['sass-compress']);
+//    gulp.watch(['./public/assets/js/**/*.js'],['js-compress']); 
+    gulp.watch(['./public/assets/images/*.*'],['image-optimize']);
+	 gulp.watch(['./public/assets/sass/**/*.scss'], ['sass']);
+      gulp.watch(['./public/assets/sass/**/*.scss'], ['sass-compress']);
 })
 
 
 gulp.task('default', () =>  {
-	gulp.start('image-optimize','sass','sass-compress','watch');
+	gulp.start('image-optimize','sass','sass-compress');
 });
