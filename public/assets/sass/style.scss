@@ -27,6 +27,7 @@ h1, h2, h3, a, p, li, span {
 }
 
 .codeminer-title {
+  margin-top:-0.2em;
   font-size: 7rem;
   text-align: center;
   color:#585858;
@@ -37,7 +38,7 @@ h1, h2, h3, a, p, li, span {
   font-size: 12vw;
   color: white;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 0;
   font-weight: 400;
   letter-spacing: 0.8rem;
@@ -88,8 +89,10 @@ h1, h2, h3, a, p, li, span {
 
 .jumbotron {
   background: url('../../images/central-banner-top.jpg') no-repeat (center / cover);
+  background-attachment: fixed;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .flex-container {
@@ -290,4 +293,73 @@ hr.line {
   margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+
+
+
+.navbar {
+  list-style: none;
+  margin: 0; 
+  margin-right: 2em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 1em;
+  margin-right: 2em;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  @media all and (max-width: 800px) {
+    margin-right: 0em;
+    .pipe {
+      display: none;
+    }
+  }
+}
+
+.navbar a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+
+@media all and (max-width: 800px) {
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navbar a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navbar li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.signup-label,
+.signin-label {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.signup-label {
+  margin-top: 0.2em;
+	background: rgba(83, 6, 6, 0.30);
 }
