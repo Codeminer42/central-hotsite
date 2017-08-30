@@ -118,10 +118,11 @@ h1, h2, h3, a, p, li, span {
 
 .img-wrapper {
   width: 50%;
-  justify-content: flex-end;
+  
   @media(max-width: 800px) {
-      width: 100%;
-    }
+    width: 100%;
+    
+  }
 }
 
 .report-subtitle {
@@ -174,6 +175,11 @@ h1, h2, h3, a, p, li, span {
     height: 8rem;
     width: 8rem;
     margin: 1rem 0 1rem 0;
+    
+    @media(max-width: 600px) {
+      height: 4.5rem;
+      width: 4.5rem;
+    }
   }
 }
 
@@ -181,14 +187,21 @@ h1, h2, h3, a, p, li, span {
   text-align: center;
   font-size: 1.3rem;
   margin-top: 5rem;
+  
   h2 {
     margin-bottom: 2rem;
   }
+
   img {
     margin-top: 2rem;
     height: 6.25rem;
     width: 6.25rem;
-    margin-right: 2rem;
+    margin: 0 1rem 0 1rem;
+
+    @media(max-width: 600px) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 }
 
@@ -281,7 +294,8 @@ hr.line {
 .shadow-image {
   width: 90%;
   box-shadow: 5px 5px 10px grey;
-  margin-left: 2rem;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 
