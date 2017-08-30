@@ -225,6 +225,11 @@ h1, h2, h3, a, p, li, span {
 }
 
 .logos {
+  margin-top:2em;
+  margin-left: 5em;
+  @media(max-width: 650px){
+    margin-left: 0;
+  }
   a {
     text-decoration: none;
   }
@@ -239,6 +244,10 @@ h1, h2, h3, a, p, li, span {
 
 .footer-wrapper {
   text-align: center;
+  margin-right: 5em;
+  @media(max-width: 650px){
+    margin-right: 0;
+  }
 }
 .cm42-logo {
   margin-top: 0.5rem;
