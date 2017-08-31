@@ -65,8 +65,6 @@ h1, h2, h3, a, p, li, span {
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 1.2rem;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
   border: 0.05rem solid white;
   border-radius: 4rem;
@@ -252,7 +250,7 @@ h1, h2, h3, a, p, li, span {
 .integration {
   text-align: center;
   font-size: 1.3rem;
-  margin-top: 5rem;
+  margin: 4rem 0 4rem 0;
   
   h2 {
     margin-bottom: 2rem;
@@ -269,6 +267,56 @@ h1, h2, h3, a, p, li, span {
       width: 4rem;
     }
   }
+}
+
+.signup-container {
+  background-color: #8E1010;
+  height: 20rem;
+  text-align: center;
+
+  @media (max-width:600px) {
+    height: 15rem;
+  }
+
+  .ready-to-start {
+    font-size: 3rem;
+    color: white;
+    font-weight: 300;
+    position: relative;
+    top: 0.5rem;
+    padding-top: 2rem;
+
+    @media (max-width: 600px) {
+      font-size: 2rem; 
+    }
+  }
+
+  .big-btn-container {
+    width: 15rem;
+    height: 5rem;
+    margin: 2.5rem auto;
+    background-color: #C5322B;
+    transition-duration: 0.4s;
+    box-shadow: 1px 1px 10px #373636;
+    justify-content: center;
+
+    &:hover {
+      background-color: #DB362F;
+    }
+
+    .signup-big-btn {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
+      padding: 1.5rem;
+
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  
 }
 
 .sign-up-btn {
@@ -290,7 +338,6 @@ h1, h2, h3, a, p, li, span {
 
 .footer {
   padding: 1rem;
-  margin-top: 7em;
   margin-bottom: 0;
   background-color: #AE0606;
   height: 7.5rem;
