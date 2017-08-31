@@ -361,5 +361,9 @@ hr.line {
 
 .signup-label {
   margin-top: 0.2em;
-	background: rgba(83, 6, 6, 0.30);
+  background: rgba(83, 6, 6, 0.30);
+  & a:hover{
+    transition: ease 1s;
+    background: rgba(31, 1, 1, 0.30);
+  }
 }
