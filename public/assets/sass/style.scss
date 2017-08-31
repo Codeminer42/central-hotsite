@@ -27,7 +27,6 @@ h1, h2, h3, a, p, li, span {
 }
 
 .codeminer-title {
-  margin-top:-0.2em;
   font-size: 7rem;
   text-align: center;
   color:#585858;
@@ -38,7 +37,7 @@ h1, h2, h3, a, p, li, span {
   font-size: 12vw;
   color: white;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 0;
   font-weight: 400;
   letter-spacing: 0.8rem;
@@ -89,10 +88,8 @@ h1, h2, h3, a, p, li, span {
 
 .jumbotron {
   background: url('../../images/central-banner-top.jpg') no-repeat (center / cover);
-  background-attachment: fixed;
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .flex-container {
@@ -121,10 +118,11 @@ h1, h2, h3, a, p, li, span {
 
 .img-wrapper {
   width: 50%;
-  justify-content: flex-end;
+  
   @media(max-width: 800px) {
-      width: 100%;
-    }
+    width: 100%;
+    
+  }
 }
 
 .report-subtitle {
@@ -177,6 +175,11 @@ h1, h2, h3, a, p, li, span {
     height: 8rem;
     width: 8rem;
     margin: 1rem 0 1rem 0;
+    
+    @media(max-width: 600px) {
+      height: 4.5rem;
+      width: 4.5rem;
+    }
   }
 }
 
@@ -184,14 +187,21 @@ h1, h2, h3, a, p, li, span {
   text-align: center;
   font-size: 1.3rem;
   margin-top: 5rem;
+  
   h2 {
     margin-bottom: 2rem;
   }
+
   img {
     margin-top: 2rem;
     height: 6.25rem;
     width: 6.25rem;
-    margin-right: 2rem;
+    margin: 0 1rem 0 1rem;
+
+    @media(max-width: 600px) {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 }
 
@@ -284,7 +294,8 @@ hr.line {
 .shadow-image {
   width: 90%;
   box-shadow: 5px 5px 10px grey;
-  margin-left: 2rem;
+  display: block;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 
@@ -293,6 +304,7 @@ hr.line {
   margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
+
 }
 
 
@@ -366,4 +378,5 @@ hr.line {
     transition: ease 1s;
     background: rgba(31, 1, 1, 0.30);
   }
+
 }
