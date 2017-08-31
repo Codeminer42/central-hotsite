@@ -44,7 +44,6 @@ h1, h2, h3, a, p, li, span {
   text-transform: uppercase;
 }
 
-
 .btn {
   text-align: center;
 }
@@ -121,7 +120,6 @@ h1, h2, h3, a, p, li, span {
   
   @media(max-width: 800px) {
     width: 100%;
-    
   }
 }
 
@@ -179,6 +177,23 @@ h1, h2, h3, a, p, li, span {
     @media(max-width: 600px) {
       height: 4.5rem;
       width: 4.5rem;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+
+  .mentions {
+    font-size: 7.5rem;
+
+    @media (max-width: 600px) {
+      font-size: 5.2rem;
     }
   }
 }
@@ -243,6 +258,7 @@ h1, h2, h3, a, p, li, span {
   @media(max-width: 650px){
     margin-left: 0;
   }
+  
   a {
     text-decoration: none;
   }
@@ -304,10 +320,7 @@ hr.line {
   margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
-
 }
-
-
 
 .navbar {
   list-style: none;
@@ -330,7 +343,7 @@ hr.line {
   }
 }
 
-.navbar a {
+.navbar a, .navbar span {
   text-decoration: none;
   display: block;
   padding: 1em;
