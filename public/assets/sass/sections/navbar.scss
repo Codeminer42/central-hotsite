@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 .navbar {
   list-style: none;
   margin: 0; 
@@ -23,7 +25,7 @@
   text-decoration: none;
   display: block;
   padding: 1em;
-  color: white;
+  color: $white;
 }
 
 
@@ -43,8 +45,8 @@
   .navbar a { 
     text-align: center; 
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
+    border-top: 1px solid $greydarken-1;
+    border-bottom: 1px solid  $blacklight-2;
   }
 
   
@@ -62,10 +64,14 @@
 
 .signup-label {
   margin-top: 0.2em;
-  background: rgba(83, 6, 6, 0.30);
+  background: $reddarken-5;
+  a {
+    transition: ease 1s;
+  }
+  
   & a:hover{
     transition: ease 1s;
-    background: rgba(31, 1, 1, 0.30);
+    background: $reddarken-6;
   }
 
 }

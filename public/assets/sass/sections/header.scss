@@ -1,17 +1,19 @@
+@import '../colors.scss';
+
 .codeminer-title {
   margin-top:0;
   font-size: 7rem;
   text-align: center;
-  color:#585858;
+  color: $greydarken-3;
   text-transform: uppercase;
   @media all and (max-width: 768px) {
-    color:white;
+    color: $white;
   }
 }
 
 .central-title {
   font-size: 12vw;
-  color: white;
+  color: $white;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 0;
@@ -40,23 +42,23 @@
 
 .sign-up-btn-banner {
   background-color: transparent;
-  color: white;
+  color: $white;
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 1.2rem;
   transition-duration: 0.4s;
-  border: 0.05rem solid white;
+  border: 0.05rem solid $white;
   border-radius: 4rem;
   &:hover {
-    background-color: white;
-    color: black;
+    background-color: $white;
+    color: $black;
   }
 }
 
 .central-subtitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
-  color: white;
+  color: $white;
   margin-top: 0;
   text-align: center;
   font-weight: 300;
@@ -74,18 +76,18 @@
 
 .sign-up-btn {
   background-color: transparent;
-  color: black;
+  color: $black;
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 3rem;
   -webkit-transition-duration: 0.4s;
   /* Safari */
   transition-duration: 0.4s;
-  border: 0.05rem solid #AE0606;
+  border: 0.05rem solid $reddarken-3;
   border-radius: 4rem;
   &:hover {
-    background-color: #AE0606;
-    color: white;
+    background-color: $reddarken-3;
+    color: $white;
   }
 }
 

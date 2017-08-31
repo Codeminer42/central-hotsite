@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 body {
   margin: 0px;
 }
@@ -32,17 +34,17 @@ h1, h2, h3, a, p, li, span {
 hr.line {
   border: 0;
   height: 0.1rem;
-  background: #333;
+  background: $blacklight-1;
   width: 30%;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  background-image: linear-gradient(to right, $whitedarken-2, $blacklight-1, $whitedarken-2);
   margin-bottom: 4rem;
 }
 
 .section-heading {
   border: 0;
   height: 0.1rem;
-  background: #BAB8B8;
+  background: $grey;
   width: 40%;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  background-image: linear-gradient(to right, $whitedarken-2, $blacklight-1, $whitedarken-2);
   margin-bottom: 4rem;
 }

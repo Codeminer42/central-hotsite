@@ -1,3 +1,5 @@
+@import '../colors.scss';
+
 .cowork-banner {
   background: url('../../images/cowork-dark.png') no-repeat center / cover;
   height: 100%;
@@ -5,7 +7,7 @@
 
   h1 {
     font-size: 5rem;
-    color: white;
+    color: $white;
     text-align: center;
     padding-top: 15rem;
     font-weight: 600;
@@ -34,7 +36,7 @@
 
   p {
     font-size: 3vh;
-    color: white;
+    color: $white;
     text-align: center;
     padding: 0 2rem;
     font-weight: 200;

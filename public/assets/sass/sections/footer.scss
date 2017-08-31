@@ -1,9 +1,11 @@
+@import '../colors.scss';
+
 .footer {
   padding: 1rem;
   margin-bottom: 0;
-  background-color: #AE0606;
+  background-color: $reddarken-3;
   height: 7.5rem;
-  color: white;
+  color: $white;
   font-size: 1.1rem;
   justify-content: space-between
 }
