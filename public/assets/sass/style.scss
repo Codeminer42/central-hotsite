@@ -165,6 +165,69 @@ h1, h2, h3, a, p, li, span {
   }
 }
 
+.cowork-banner {
+  background: url('../../images/cowork-dark.png') no-repeat center / cover;
+  height: 100%;
+  background-attachment: fixed;
+
+  h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding-top: 15rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+      
+      font-size: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 4rem;
+      font-size: 2rem;
+    }
+  }
+
+  .cowork-subtitle {
+    width: 50%;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 0;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+   
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+      padding-bottom: -2rem;
+      line-height: 4rem;
+      margin-top: -0.1rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 0.8rem;
+      padding-bottom: -2rem;
+      line-height: 1.5rem;
+      margin-top: -0.1rem;
+    }
+  }
+
+ 
+}
+
 .more-feature-list {
   list-style-type: none;
   text-align: center;
@@ -258,7 +321,7 @@ h1, h2, h3, a, p, li, span {
   @media(max-width: 650px){
     margin-left: 0;
   }
-  
+
   a {
     text-decoration: none;
   }
