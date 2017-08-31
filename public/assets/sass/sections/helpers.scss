@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+}
+
+h1, h2, h3, a, p, li, span {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  width: 100%;
+  flex-direction: row;
+
+  @media(max-width: 800px){
+    flex-direction: column;
+  }
+}
+
+.flex-column {
+  width: 100%;
+  flex-direction: column;
+}
+
+.flex-container {
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+hr.line {
+  border: 0;
+  height: 0.1rem;
+  background: #333;
+  width: 30%;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 4rem;
+}
+
+.section-heading {
+  border: 0;
+  height: 0.1rem;
+  background: #BAB8B8;
+  width: 40%;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 4rem;
+}

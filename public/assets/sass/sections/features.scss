@@ -1,0 +1,63 @@
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.feature-column {
+  width: 50%;
+  @media(max-width: 800px) {
+    width: 100%;
+    align-items: center
+  }
+}
+
+.features-subtitle {
+  color: #d0011b;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.img-wrapper {
+  width: 50%;
+  
+  @media(max-width: 800px) {
+    width: 100%;
+  }
+}
+
+.report-subtitle {
+  width: 100%;
+}
+
+.features-list {
+  font-size: 1.3rem;
+  line-height: 3rem;
+
+  @media (max-width: 800px) {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0
+  }
+}
+
+.backlog-list {
+  margin-left: 8rem;
+  @media (max-width: 800px) {
+    margin-left: 0
+  }
+}
+
+.report-list {
+  margin-left: 10rem;
+  @media (max-width: 800px) {
+    margin-left: 0
+  }
+}
+
+.shadow-image {
+  width: 90%;
+  box-shadow: 5px 5px 10px grey;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}

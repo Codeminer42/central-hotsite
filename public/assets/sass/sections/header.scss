@@ -1,0 +1,99 @@
+.codeminer-title {
+  margin-top:0;
+  font-size: 7rem;
+  text-align: center;
+  color:#585858;
+  text-transform: uppercase;
+  @media all and (max-width: 768px) {
+    color:white;
+  }
+}
+
+.central-title {
+  font-size: 12vw;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  @media all and (max-width: 800px) {
+    margin-top: -1em;
+  }
+}
+
+.btn {
+  text-align: center;
+}
+
+.features-spacer {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column-fix {
+  @media(max-width: 800px){
+    flex-direction: column-reverse;
+  }
+}
+
+.sign-up-btn-banner {
+  background-color: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition-duration: 0.4s;
+  border: 0.05rem solid white;
+  border-radius: 4rem;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.central-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 300;
+  @media all and (max-width:768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.jumbotron {
+  background: url('../../images/central-banner-top.jpg') no-repeat (center / cover);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.sign-up-btn {
+  background-color: transparent;
+  color: black;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 3rem;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border: 0.05rem solid #AE0606;
+  border-radius: 4rem;
+  &:hover {
+    background-color: #AE0606;
+    color: white;
+  }
+}
+
+.section-heading {
+  border: 0;
+  height: 0.1rem;
+  background: #BAB8B8;
+  width: 40%;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  margin-bottom: 4rem;
+}
