@@ -97,6 +97,7 @@ h1, h2, h3, a, p, li, span {
   background: url('../../images/central-banner-top.jpg') no-repeat (center / cover);
   height: 100%;
   width: 100%;
+  background-attachment: fixed;
 }
 
 .flex-container {
