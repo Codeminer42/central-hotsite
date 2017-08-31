@@ -51,7 +51,6 @@ h1, h2, h3, a, p, li, span {
   }
 }
 
-
 .btn {
   text-align: center;
 }
@@ -73,8 +72,6 @@ h1, h2, h3, a, p, li, span {
   padding: 1rem 2rem;
   text-decoration: none;
   font-size: 1.2rem;
-  -webkit-transition-duration: 0.4s;
-  /* Safari */
   transition-duration: 0.4s;
   border: 0.05rem solid white;
   border-radius: 4rem;
@@ -131,7 +128,6 @@ h1, h2, h3, a, p, li, span {
   
   @media(max-width: 800px) {
     width: 100%;
-    
   }
 }
 
@@ -177,6 +173,57 @@ h1, h2, h3, a, p, li, span {
   }
 }
 
+.cowork-banner {
+  background: url('../../images/cowork-dark.png') no-repeat center / cover;
+  height: 100%;
+  background-attachment: fixed;
+
+  h1 {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding-top: 15rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+
+    @media (min-width: 601px) and (max-width: 1400px) {
+      padding-top: 4rem;
+      font-size: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 4rem;
+      font-size: 2rem;
+    }
+  }
+
+  .cowork-subtitle {
+    width: 60%;
+    margin: 0 auto;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    line-height: 4.5rem;
+   
+    @media (max-width: 600px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
 .more-feature-list {
   list-style-type: none;
   text-align: center;
@@ -191,12 +238,29 @@ h1, h2, h3, a, p, li, span {
       width: 4.5rem;
     }
   }
+
+  p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
+  }
+
+  .mentions {
+    font-size: 7.5rem;
+
+    @media (max-width: 600px) {
+      font-size: 5.2rem;
+    }
+  }
 }
 
 .integration {
   text-align: center;
   font-size: 1.3rem;
-  margin-top: 5rem;
+  margin: 4rem 0 4rem 0;
   
   h2 {
     margin-bottom: 2rem;
@@ -213,6 +277,56 @@ h1, h2, h3, a, p, li, span {
       width: 4rem;
     }
   }
+}
+
+.signup-container {
+  background-color: #8E1010;
+  height: 20rem;
+  text-align: center;
+
+  @media (max-width:600px) {
+    height: 15rem;
+  }
+
+  .ready-to-start {
+    font-size: 3rem;
+    color: white;
+    font-weight: 300;
+    position: relative;
+    top: 0.5rem;
+    padding-top: 2rem;
+
+    @media (max-width: 600px) {
+      font-size: 2rem; 
+    }
+  }
+
+  .big-btn-container {
+    width: 15rem;
+    height: 5rem;
+    margin: 2.5rem auto;
+    background-color: #C5322B;
+    transition-duration: 0.4s;
+    box-shadow: 1px 1px 10px #373636;
+    justify-content: center;
+
+    &:hover {
+      background-color: #DB362F;
+    }
+
+    .signup-big-btn {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: white;
+      padding: 1.5rem;
+
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  
 }
 
 .sign-up-btn {
@@ -234,7 +348,6 @@ h1, h2, h3, a, p, li, span {
 
 .footer {
   padding: 1rem;
-  margin-top: 7em;
   margin-bottom: 0;
   background-color: #AE0606;
   height: 7.5rem;
@@ -253,6 +366,7 @@ h1, h2, h3, a, p, li, span {
   @media(max-width: 650px){
     margin-left: 0;
   }
+
   a {
     text-decoration: none;
   }
@@ -314,10 +428,7 @@ hr.line {
   margin-top: 1rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
-
 }
-
-
 
 .navbar {
   list-style: none;
@@ -340,7 +451,7 @@ hr.line {
   }
 }
 
-.navbar a {
+.navbar a, .navbar span {
   text-decoration: none;
   display: block;
   padding: 1em;
