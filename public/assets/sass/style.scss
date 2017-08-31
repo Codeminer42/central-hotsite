@@ -47,9 +47,6 @@ h1, h2, h3, a, p, li, span {
   letter-spacing: 0.8rem;
   text-transform: uppercase;
   @media all and (max-width: 800px) {
-    margin-top: -2em;
-  }
-  @media all and (max-width: 800px) {
     margin-top: -1em;
   }
 }
