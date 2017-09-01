@@ -1,6 +1,10 @@
 @import '../colors.scss';
 
-
+.feature-section-small {
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
 
 .feature-column {
   width: 50%;

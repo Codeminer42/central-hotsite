@@ -1,0 +1,105 @@
+@import './sections/helpers.scss';
+
+.central-description {
+  text-align: center;
+  line-height: 2rem;
+  
+}
+
+.central-description-sub {
+  width: 60%;
+  margin: 0 auto;
+  
+}
+
+.close-outside{
+  cursor: pointer;
+}
+
+.feature-section-big {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.modal-container {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.modal-interior {
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
+}
+
+.modal-trigger {
+  flex-wrap: wrap;
+  text-decoration: none;
+
+  .modal-img {
+    width: 40%;
+    margin: 0.5rem;
+  }
+}
+
+.modal-inner-img {
+  width: 100%;
+}
+
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.modal-window:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-window>div {
+  max-width: 50%;
+  min-width: 40rem;
+  
+ 
+  position: relative;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: rgb(255,255,255);
+  color: #444;
+}
+
+.modal-window header {
+  font-weight: bold;
+}
+
+.modal-close {
+  color: red;
+  line-height: 5rem;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 5rem;
+  text-decoration: none;
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-window h1 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
