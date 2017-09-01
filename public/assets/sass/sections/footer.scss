@@ -14,7 +14,7 @@
   flex-direction: column
 }
 
-.logos {
+.footer-logos {
   margin-top:2em;
   margin-left: 5em;
   @media(max-width: 650px){
@@ -40,13 +40,13 @@
     margin-right: 0;
   }
 }
-.cm42-logo {
+.footer-cm42-logo {
   margin-top: 0.5rem;
   width: 5rem;
   height: 5rem;
 }
 
-.copyright {
+.footer-copyright {
   margin-top: 1rem;
   font-size: 0.8rem;
 }

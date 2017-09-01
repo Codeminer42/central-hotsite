@@ -1,6 +1,6 @@
 @import '../colors.scss';
 
-.cowork-banner {
+.banner-secondary {
   background: url('../../images/cowork-dark.png') no-repeat center / cover;
   height: 100%;
   background-attachment: fixed;
@@ -25,7 +25,7 @@
     }
   }
 
-  .cowork-subtitle {
+  .banner-subtitle {
     width: 60%;
     margin: 0 auto;
 

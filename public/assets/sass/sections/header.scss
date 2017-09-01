@@ -1,6 +1,6 @@
 @import '../colors.scss';
 
-.codeminer-title {
+.header-cm-title {
   margin-top:0;
   font-size: 7rem;
   text-align: center;
@@ -11,7 +11,7 @@
   }
 }
 
-.central-title {
+.header-title {
   font-size: 12vw;
   color: $white;
   text-align: center;
@@ -40,7 +40,7 @@
   }
 }
 
-.sign-up-btn-banner {
+.sign-up-btn-header {
   background-color: transparent;
   color: $white;
   padding: 1rem 2rem;
@@ -55,7 +55,7 @@
   }
 }
 
-.central-subtitle {
+.header-subtitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
   color: $white;
@@ -67,7 +67,7 @@
   }
 }
 
-.jumbotron {
+.header-jumbotron {
   background: url('../../images/central-banner-top.jpg') no-repeat (center / cover);
   height: 100%;
   width: 100%;

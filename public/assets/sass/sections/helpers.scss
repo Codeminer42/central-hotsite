@@ -48,3 +48,25 @@ hr.line {
   background-image: linear-gradient(to right, $whitedarken-2, $blacklight-1, $whitedarken-2);
   margin-bottom: 4rem;
 }
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.helper-img-wrapper {
+  width: 50%;
+  
+  @media(max-width: 800px) {
+    width: 100%;
+  }
+}
+
+
+.helper-shadow-image {
+  width: 90%;
+  box-shadow: 5px 5px 10px grey;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}

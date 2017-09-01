@@ -1,9 +1,6 @@
 @import '../colors.scss';
 
-.section-title {
-  text-align: center;
-  font-size: 3rem;
-}
+
 
 .feature-column {
   width: 50%;
@@ -19,13 +16,6 @@
   text-align: center;
 }
 
-.img-wrapper {
-  width: 50%;
-  
-  @media(max-width: 800px) {
-    width: 100%;
-  }
-}
 
 .report-subtitle {
   width: 100%;
@@ -54,12 +44,4 @@
   @media (max-width: 800px) {
     margin-left: 0
   }
-}
-
-.shadow-image {
-  width: 90%;
-  box-shadow: 5px 5px 10px grey;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 2rem;
 }
