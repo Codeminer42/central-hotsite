@@ -1,4 +1,4 @@
-# Central SPA - [Template](https://central42.herokuapp.com/)
+# Central SPA - [Template](https://centralcm42-hotsite.herokuapp.com/)
 
 
 Boilerplate of the Centra SPA build with Gulp
