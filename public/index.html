@@ -4,64 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/css/minify/style.css" type="text/css">
+    <link rel="icon" type="image/png" href="dist/images/central-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="dist/images/central-32x32.png" sizes="32x32">
+
+    <title>Central - CM42</title>
   </head>
 
   <body>
-    <div class="jumbotron">
+    <div class="header-jumbotron">
       <ul class="navbar">
         <li class="signin-label"><a href="https://central.cm42.io/users/sign_in">Signin</a></li>
-        <li class="pipe"><a href="#">|</a></li>
+        <li class="navbar-pipe"><span>|</span></li>
         <li class="signup-label"><a href="https://central.cm42.io/users/sign_up">Signup</a></li>
       </ul>
-      <h1 class="codeminer-title">cm42</h1>
-      <h1 class="central-title">central</h1>
-      <h3 class="central-subtitle">Best and free backlog management system</h3>
-      <div class="btn"><a href="https://central.cm42.io/users/sign_up" class="sign-up-btn-banner">Sign up</a></div>
+      <h1 class="header-cm-title">cm42</h1>
+      <h1 class="header-title">central</h1>
+      <h3 class="header-subtitle">Best and free backlog management system</h3>
+      <div class="btn"><a href="https://central.cm42.io/users/sign_up" class="sign-up-btn-header">Sign up</a></div>
     </div>
+
+    <div class="feature-section-big">
+      <h2 class="section-title">Features</h2>
+      <hr class="line">
+      <div class="modal-container flex">
+        <div class="modal-interior flex-column central-description">
+          <div class="central-description-sub">
+            <h2>Central</h2>
+            <p class="">Teams, tasks and process with focus to define the better steps for your projects. Measuring the stages in favor
+              of more results.</p>
+            <p>This is Central, Open Source and organized, to make your life easier </p>
+          </div>
+        </div>
+        <div class="modal-interior">
+          <a class="modal-trigger" href="#modal-sample-dashboard">
+            <img class="modal-img helper-shadow-cards" src="./dist/images/sample-dashboard.png" alt="story">
+          </a>
+          <a class="modal-trigger" href="#modal-tag-groups">
+            <img class="modal-img helper-shadow-cards" src="./dist/images/tag-groups.png" alt="burnup-chart">
+          </a>
+          <a class="modal-trigger" href="#modal-charts">
+            <img class="modal-img helper-shadow-cards" src="./dist/images/charts.png" alt="story">
+          </a>
+          <a class="modal-trigger" href="#modal-storyline">
+            <img class="modal-img helper-shadow-cards" src="./dist/images/storyline-central.png" alt="burnup-chart">
+          </a>
+        </div>
+      </div>
+      <div id="modal-sample-dashboard" class="modal-window">
+        <div class="close-outside">
+          <a href="#modal-close" title="Close" class="modal-close">Close</a>
+          <h1>Dashboard</h1>
+          <div>
+            <img class="modal-inner-img" src="./dist/images/sample-dashboard.png" alt="story">
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-tag-groups" class="modal-window">
+        <div>
+          <a href="#modal-close" title="Close" class="modal-close">Close</a>
+          <h1>Tag groups</h1>
+          <div>
+            <img class="modal-inner-img" src="./dist/images/tag-groups.png" alt="story">
+          </div>
+        </div>
+      </div>
+      <div id="modal-storyline" class="modal-window">
+        <div>
+          <a href="#modal-close" title="Close" class="modal-close">Close</a>
+          <h1>Storyline</h1>
+          <div>
+            <img class="modal-inner-img" src="./dist/images/storyline-central.png" alt="story">
+          </div>
+        </div>
+      </div>
+      <div id="modal-charts" class="modal-window">
+        <div>
+          <a href="#modal-close" title="Close" class="modal-close">Close</a>
+          <h1>Charts</h1>
+          <div>
+            <img class="modal-inner-img" src="./dist/images/charts.png" alt="story">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="flex">
       <div class="flex-column">
+        <div class="feature-section-small">
+          <h2 class="section-title">Features</h2>
+          <hr class="line">
+          <div class="flex features-spacer">
+            <div class="feature-column">
+              <div class="flex-column">
+                <h3 class="features-subtitle">Project Backlog</h3>
+                <ul class="features-list backlog-list">
+                  <li>Project list</li>
+                  <li>Tasks</li>
+                  <li>Label</li>
+                  <li>Story Linking</li>
+                </ul>
+              </div>
+            </div>
+            <div class="helper-img-wrapper">
+              <img class="helper-shadow-image" src="./dist/images/sample-dashboard.png" alt="central-story">
+            </div>
 
-        <h2 class="section-title">Features</h2>
-        <hr class="line">
-        <div class="flex features-spacer">
-          <div class="feature-column">
-            <div class="flex-column">
-              <h3 class="features-subtitle">Project Backlog</h3>
-              <ul class="features-list backlog-list">
-                <li>Project list</li>
-                <li>Tasks</li>
-                <li>Label</li>
-                <li>Story Linking</li>
-              </ul>
+            <div class="helper-img-wrapper">
+              <img class="helper-shadow-image" src="./dist/images/storyline-central.png" alt="central-story">
             </div>
           </div>
-          <div class="img-wrapper">
-            <img class="shadow-image" src="./dist/images/central-story.png" alt="central-story">
+
+          <div class="flex features-spacer column-fix">
+            <div class="helper-img-wrapper">
+              <img class="features-img helper-shadow-image" src="./dist/images/charts.png" alt="central-story">
+            </div>
+            <div class="helper-img-wrapper">
+              <img class="features-img helper-shadow-image" src="./dist/images/burn-up-chart.png" alt="central-story">
+            </div>
+
+            <div class="feature-column">
+              <div class="flex-column">
+                <h3 class="features-subtitle report-subtitle">Reports</h3>
+                <ul class="features-list report-list">
+                  <li>Burn up chart</li>
+                  <li>Velocity per interation</li>
+                  <li>Bugs per iterations</li>
+                  <li>Velocity per member per iteration</li>
+                  <li>Volatility calculation</li>
+                  <li>Basic current iteration status</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-column banner-secondary">
+          <h1>Real control of your projects</h1>
+          <div class="banner-subtitle">
+            <p>Central gives you the realistic expectations about when you will really finish your milestones</p>
           </div>
 
         </div>
 
-
-        <div class="flex features-spacer column-fix">
-          <div class="img-wrapper">
-            <img class="features-img shadow-image" src="./dist/images/burn-up-chart.png" alt="central-story">
-          </div>
-
-          <div class="feature-column">
-            <div class="flex-column">
-              <h3 class="features-subtitle report-subtitle">Reports</h3>
-              <ul class="features-list report-list">
-                <li>Burn up chart</li>
-                <li>Velocity per interation</li>
-                <li>Bugs per iterations</li>
-                <li>Velocity per member per iteration</li>
-                <li>Volatility calculation</li>
-                <li>Basic current iteration status</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
         <div class="more-feature-section">
           <h2 class="section-title more-features-title">More features</h2>
           <hr class="line">
@@ -70,26 +156,33 @@
               <li>
                 <img src="./dist/images/bell.png" alt="Notifications">
                 <br> Notifications
+                <p>Receive updates about your projects <br> and their workflow</p>
               </li>
               <li>
                 <img src="./dist/images/file-sharing.png" alt="File-sharing">
                 <br> File Sharing
+                <p>Share files, images and presentations<br>with your project team</p>
               </li>
               <li>
-                <img src="./dist/images/mentions.png" alt="Mentions">
+                <span class="mentions">@</span>
                 <br> Mentions
+                <p>Using @, keep your team or a member <br>informed about project decisions</p>
               </li>
               <li>
                 <img src="./dist/images/api.png" alt="API">
                 <br> API
+                <p>Central has a REST API that allows your team<br> to customize tools and integrations</p>
               </li>
               <li>
                 <img src="./dist/images/import.png" alt="Import/Export">
                 <br> Import/Export
+                <p>Central can import/export projects with all its <br>stories, hopes and expectations</p>
               </li>
               <li>
                 <img src="./dist/images/tag-group.png" alt="Notifications">
-                <br> Tag Group</li>
+                <br> Tag Group
+                <p>Tag groups keep your projects organized, filtering<br>them according to your interests</p>
+              </li>
             </ul>
 
           </div>
@@ -98,15 +191,23 @@
 
         <div class="integration">
           <h2>Integration with</h2>
-            <img src="./dist/images/slack-icon.png" alt="slack">
-            <img src="./dist/images/discord-icon.png" alt="discord">
-            <img src="./dist/images/mattermost-icon.png" alt="mattermost">
+          <img src="./dist/images/slack-icon.png" alt="slack">
+          <img src="./dist/images/discord-icon.png" alt="discord">
+          <img src="./dist/images/mattermost-icon.png" alt="mattermost">
+        </div>
+
+        <div class="signup-section-container">
+          <h1 class="ready-to-start">Ready to start?</h1>
+          <div class="big-btn-container flex flex-column">
+            <a class="signup-big-btn" href="https://central.cm42.io/users/sign_up">Sign up for free</a>
+          </div>
+
         </div>
 
         <footer>
           <div class="flex flex-container footer">
             <div class="footer-column">
-              <div class="logos">
+              <div class="footer-logos">
                 <a href="https://twitter.com/codeminer42?lang=en">
                   <img src="./dist/images/twitter-logo-white.png" alt="cm42 twitter">
                 </a>
@@ -120,10 +221,10 @@
             </div>
             <div class="footer-column footer-wrapper">
               <a href="http://www.codeminer42.com/">
-                <img class="cm42-logo" src="./assets/images/codeminer42-logo-white.png" alt="codeminer logo">
+                <img class="footer-cm42-logo" src="./assets/images/codeminer42-logo-white.png" alt="codeminer logo">
               </a>
 
-              <div class="copyright">
+              <div class="footer-copyright">
                 <span>2017 Codeminer 42</span>
               </div>
 

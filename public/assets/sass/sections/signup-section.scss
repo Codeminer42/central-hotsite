@@ -1,0 +1,49 @@
+@import '../colors.scss';
+
+.signup-section-container {
+  background-color: $reddarken-4;
+  height: 20rem;
+  text-align: center;
+
+  @media (max-width:600px) {
+    height: 15rem;
+  }
+
+  .ready-to-start {
+    font-size: 3rem;
+    color: $white;
+    font-weight: 300;
+    position: relative;
+    top: 0.5rem;
+    padding-top: 2rem;
+
+    @media (max-width: 600px) {
+      font-size: 2rem; 
+    }
+  }
+
+  .big-btn-container {
+    width: 15rem;
+    height: 5rem;
+    margin: 2.5rem auto;
+    background-color: $orangedark-1;
+    transition-duration: 0.4s;
+    box-shadow: 1px 1px 10px $blacklight-1;
+    justify-content: center;
+
+    &:hover {
+      background-color: $orangedark-2;
+    }
+
+    .signup-big-btn {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $white;
+      padding: 1.5rem;
+
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

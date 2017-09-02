@@ -1,0 +1,77 @@
+@import '../colors.scss';
+
+.navbar {
+  list-style: none;
+  margin: 0; 
+  margin-right: 2em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 1em;
+  margin-right: 2em;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  @media all and (max-width: 800px) {
+    margin-right: 0em;
+    .navbar-pipe {
+      display: none;
+    }
+  }
+}
+
+.navbar a, .navbar span {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: $white;
+}
+
+
+@media all and (max-width: 800px) {
+  .navbar {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navbar {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navbar a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid $greydarken-1;
+    border-bottom: 1px solid  $blacklight-2;
+  }
+
+  
+  .navbar li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.signup-label,
+.signin-label {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.signup-label {
+  margin-top: 0.2em;
+  background: $reddarken-5;
+  a {
+    transition: ease 1s;
+  }
+  
+  & a:hover{
+    transition: ease 1s;
+    background: $reddarken-6;
+  }
+
+}

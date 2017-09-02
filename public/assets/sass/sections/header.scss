@@ -1,0 +1,93 @@
+@import '../colors.scss';
+
+.header-cm-title {
+  margin-top:0;
+  font-size: 7rem;
+  text-align: center;
+  color: $greydarken-3;
+  text-transform: uppercase;
+  @media all and (max-width: 768px) {
+    color: $white;
+  }
+}
+
+.header-title {
+  font-size: 12vw;
+  color: $white;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  @media all and (max-width: 800px) {
+    margin-top: -1em;
+  }
+}
+
+.btn {
+  text-align: center;
+}
+
+.features-spacer {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column-fix {
+  @media(max-width: 800px){
+    flex-direction: column-reverse;
+  }
+}
+
+.sign-up-btn-header {
+  background-color: transparent;
+  color: $white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition-duration: 0.4s;
+  border: 0.05rem solid $white;
+  border-radius: 4rem;
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}
+
+.header-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  color: $white;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 300;
+  @media all and (max-width:768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.header-jumbotron {
+  background: url('../../images/central-banner-top.jpg') no-repeat (center / cover);
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.sign-up-btn {
+  background-color: transparent;
+  color: $black;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 3rem;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  border: 0.05rem solid $reddarken-3;
+  border-radius: 4rem;
+  &:hover {
+    background-color: $reddarken-3;
+    color: $white;
+  }
+}
+
