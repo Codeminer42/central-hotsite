@@ -18,4 +18,4 @@ Boilerplate of the Centra SPA build with Gulp
 
 ## License
 
-Central-SPA is made available under the Affero GPL license version 3, see [LICENSE.md](https://github.com/moiseshilario/central-spa/blob/master/LICENSE.txt).
+Central-SPA is made available under the Affero GPL license version 3, see [LICENSE.txt](https://github.com/moiseshilario/central-spa/blob/master/LICENSE.txt).
