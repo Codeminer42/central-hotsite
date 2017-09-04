@@ -50,3 +50,9 @@
     }
   }
 }
+
+@-moz-document url-prefix() {
+    .banner-secondary {
+      max-height: 50rem;
+    }
+  }
