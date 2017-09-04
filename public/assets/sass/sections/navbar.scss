@@ -66,12 +66,18 @@
   margin-top: 0.2em;
   background: $reddarken-5;
   a {
-    transition: ease 1s;
+    transition: ease 0.3s;
   }
   
   & a:hover{
-    transition: ease 1s;
     background: $reddarken-6;
   }
+}
 
+.login {
+  transition: ease 0.3s;
+
+  &:hover {
+    color: $reddarken-6;
+  }
 }
