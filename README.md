@@ -1,7 +1,7 @@
-# Central SPA - [Template](https://centralcm42-hotsite.herokuapp.com/)
+# Central Hotsite - [Template](http://www.centralcm42.com/)
 
 
-Boilerplate of the Centra SPA build with Gulp
+Boilerplate of the Central Hotsite build with Gulp
 
 ## Requirements:
 
@@ -18,4 +18,4 @@ Boilerplate of the Centra SPA build with Gulp
 
 ## License
 
-Central-SPA is made available under the Affero GPL license version 3, see [LICENSE.txt](https://github.com/moiseshilario/central-spa/blob/master/LICENSE.txt).
+Central Hotsite is made available under the Affero GPL license version 3, see [LICENSE.txt](https://github.com/Codeminer42/central-hotsite/blob/master/LICENSE.txt).
