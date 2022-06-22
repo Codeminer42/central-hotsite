@@ -5,8 +5,8 @@ Boilerplate of the Central Hotsite build with Gulp
 
 ## Requirements:
 
-- Nodejs (8.1.3)
-- NPM (5.0.3)
+- Nodejs (14.19.3)
+- NPM (6.14.17)
 
 ## Usage:
 
