@@ -15,5 +15,8 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.52.3"
+  },
+  "engines": {
+    "node": "14.19.3"
   }
 }
