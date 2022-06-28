@@ -1,7 +1,7 @@
 @import '../colors.scss';
 
 .banner-secondary {
-  background: url('../../images/cowork-dark.png') no-repeat center / cover;
+  background: url('../images/cowork-dark.png') no-repeat center / cover;
   height: 100%;
   background-attachment: fixed;
 
@@ -43,7 +43,7 @@
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     line-height: 4.5rem;
-   
+
     @media (max-width: 600px) {
       font-size: 1rem;
       line-height: 1.5rem;
@@ -52,7 +52,7 @@
 }
 
 @-moz-document url-prefix() {
-    .banner-secondary {
-      max-height: 50rem;
-    }
+  .banner-secondary {
+    max-height: 50rem;
   }
+}
